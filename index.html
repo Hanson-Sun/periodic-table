@@ -1,0 +1,488 @@
+<html>
+
+<head>
+	<title>Hanson's Perodic Table</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<script src="script.js">
+	</script>
+	<br>
+	<center>
+		<h1>Periodic Table of Elements</h1>
+		<!--<h4 class = "subhead"> Hanson Sun's Chemistry Project</h4>-->
+		<div id = "buttons">
+		<button onclick="normal()">Normal</button>
+		<button onclick="history()">History and Introduction</button>
+		<button onclick="metal()">Metals and Metallic Character</button>
+		<button onclick="nmetal()">Nonmetals</button>
+		<button onclick="metalloid()">Metalloids</button>		
+		<button onclick="atomicn()">Atomic Number</button>
+		<button onclick="atomicm()">Atomic Mass</button>		
+		<button onclick="ioncharge()">Ion Charge</button>
+		<button onclick="halogen()">Halogens</button>
+		<button onclick="noblegas()">Noble gases</button>
+		<button onclick="alkalim()">Alkali Metals</button>
+		<button onclick="alkalinem()">Alkaline Earth Metals</button>		
+		<button onclick="electneg()">Electronegativity</button>
+		<button onclick="atomic()">Atomic Radius</button>		
+		<button onclick="ione()">Ionization Energy</button>
+		<button onclick="melts()">Melting Point</button>
+		<button onclick="chemreact()">Chemical Reactivity</button>
+		<button onclick="conductshow()">Conductivity</button>
+
+</div>
+
+
+		<br>
+		<h1 id='infoheading'></h1>
+		<table id="table" cellspacing="2%" cellpadding="5%">
+			<tr class="group">
+				<td id="g1" class="group">1</td>
+				<td id="g2" class="group">2</td>
+				<td id="g3" class="group">3</td>
+				<td id="g4" class="group">4</td>
+				<td id="g5" class="group">5</td>
+				<td id="g6" class="group">6</td>
+				<td id="g7" class="group">7</td>
+				<td id="g8" class="group">8</td>
+				<td id="g9" class="group">9</td>
+				<td id="g10" class="group">10</td>
+				<td id="g11" class="group">11</td>
+				<td id="g12" class="group">12</td>
+				<td id="g13" class="group">13</td>
+				<td id="g14" class="group">14</td>
+				<td id="g15" class="group">15</td>
+				<td id="g16" class="group">16</td>
+				<td id="g17" class="group">17</td>
+				<td id="g18" class="group">18</td>
+
+			</tr>
+			<tr>
+				<td onclick="show()" id="h" class="element" align=center bgcolor=Yellow>
+					<p>H </p>
+				</td>
+				
+				<td id = "speakshow" colspan="2"></td>
+
+				<td id="row1" colspan="13"></td>
+				<td id="legend" style=" width:5.5%" class="element" bgcolor=white>
+					<div class='atmn'> Atomic<br> Number</div>
+					<div class='atmmass'> Atomic <br>mass </div>
+					<div class='electn'> Electronegativity </div>
+					<p style="text-align:center;"> X </p>
+					<div class='name'></div>
+				</td>
+
+				<td onclick="show()" id="he" class="element" align=center bgcolor=Yellow>
+					<p>He</p>
+				</td>
+
+
+
+
+			</tr>
+			<tr>
+				<td onclick="show()" id="li" class="element" align=center bgcolor=Yellow>
+					<p>Li</p>
+				</td>
+				<td onclick="show()" id="be" class="element" align=center bgcolor=Yellow>
+					<p>Be</p>
+				</td>
+				<td id="row2" colspan="10"></td>
+				<td onclick="show()" id="b" class="element" align=center bgcolor=Orange>
+					<p>B </p>
+				</td>
+				<td onclick="show()" id="c" class="element" align=center bgcolor=Orange>
+					<p>C </p>
+				</td>
+				<td onclick="show()" id="n" class="element" align=center bgcolor=Orange>
+					<p>N </p>
+				</td>
+				<td onclick="show()" id="o" class="element" align=center bgcolor=Orange>
+					<p>O </p>
+				</td>
+				<td  onclick="show()"class="element" id="f" align=center bgcolor=Orange>
+					<p>F </p>
+				</td>
+				<td onclick="show()" id="ne" class="element" align=center bgcolor=Orange>
+					<p>Ne</p>
+				</td>
+			</tr>
+			<tr>
+				<td onclick="show()" id="na" class="element" align=center bgcolor=Yellow>
+					<p>Na</p>
+				</td>
+				<td onclick="show()" id="mg" class="element" align=center bgcolor=Yellow>
+					<p>Mg</p>
+				</td>
+				<td id="row3" colspan="10"></td>
+				<td onclick="show()" id="al" class="element" align=center bgcolor=Orange>
+					<p>Al</p>
+				</td>
+				<td onclick="show()" id="si" class="element" align=center bgcolor=Orange>
+					<p>Si</p>
+				</td>
+				<td onclick="show()" id="p" class="element" align=center bgcolor=Orange>
+					<p>P </p>
+				</td>
+				<td onclick="show()" id="s" class="element" align=center bgcolor=Orange>
+					<p>S </p>
+				</td>
+				<td onclick="show()" id="cl" class="element" align=center bgcolor=Orange>
+					<p>Cl</p>
+				</td>
+				<td onclick="show()" id="ar" class="element" align=center bgcolor=Orange>
+					<p>Ar</p>
+				</td>
+			</tr>
+			<tr>
+				<td onclick="show()" id="k" class="element" align=center bgcolor=Yellow>
+					<p>K </p>
+				</td>
+				<td onclick="show()" id="ca" class="element" align=center bgcolor=Yellow>
+					<p>Ca</p>
+				</td>
+				<td onclick="show()" id="sc" class="element" align=center bgcolor=Lightgreen>
+					<p>Sc</p>
+				</td>
+				<td onclick="show()" id="ti" class="element" align=center bgcolor=Lightgreen>
+					<p>Ti</p>
+				</td>
+				<td onclick="show()" id="v" class="element" align=center bgcolor=Lightgreen>
+					<p>V </p>
+				</td>
+				<td onclick="show()" id="cr" class="element" align=center bgcolor=Lightgreen>
+					<p>Cr</p>
+				</td>
+				<td onclick="show()" id="mn" class="element" align=center bgcolor=Lightgreen>
+					<p>Mn</p>
+				</td>
+				<td onclick="show()" id="fe" class="element" align=center bgcolor=Lightgreen>
+					<p>Fe</p>
+				</td>
+				<td onclick="show()" id="co" class="element" align=center bgcolor=Lightgreen>
+					<p>Co</p>
+				</td>
+				<td onclick="show()" id="ni" class="element" align=center bgcolor=Lightgreen>
+					<p>Ni</p>
+				</td>
+				<td onclick="show()" id="cu" class="element" align=center bgcolor=Lightgreen>
+					<p>Cu</p>
+				</td>
+				<td onclick="show()" id="zn" class="element" align=center bgcolor=Lightgreen>
+					<p>Zn</p>
+				</td>
+				<td onclick="show()" id="ga" class="element" align=center bgcolor=Orange>
+					<p>Ga</p>
+				</td>
+				<td onclick="show()" id="ge" class="element" align=center bgcolor=Orange>
+					<p>Ge</p>
+				</td>
+				<td onclick="show()" id="as" class="element" align=center bgcolor=Orange>
+					<p>As</p>
+				</td>
+				<td onclick="show()" id="se" class="element" align=center bgcolor=Orange>
+					<p>Se</p>
+				</td>
+				<td onclick="show()" id="br" class="element" align=center bgcolor=Orange>
+					<p>Br</p>
+				</td>
+				<td onclick="show()" id="kr" class="element" align=center bgcolor=Orange>
+					<p>Kr</p>
+				</td>
+			</tr>
+			<tr>
+				<td onclick="show()" id="rb" class="element" align=center bgcolor=Yellow>
+					<p>Rb</p>
+				</td>
+				<td onclick="show()" id="sr" class="element" align=center bgcolor=Yellow>
+					<p>Sr</p>
+				</td>
+				<td onclick="show()" id="y" class="element" align=center bgcolor=Lightgreen>
+					<p>Y</p>
+				</td>
+				<td onclick="show()" id="zr" class="element" align=center bgcolor=Lightgreen>
+					<p>Zr</p>
+				</td>
+				<td onclick="show()" id="nb" class="element" align=center bgcolor=Lightgreen>
+					<p>Nb</p>
+				</td>
+				<td onclick="show()" id="mo" class="element" align=center bgcolor=Lightgreen>
+					<p>Mo</p>
+				</td>
+				<td onclick="show()" id="tc" class="element" align=center bgcolor=Lightgreen>
+					<p>Tc</p>
+				</td>
+				<td onclick="show()" id="ru" class="element" align=center bgcolor=Lightgreen>
+					<p>Ru</p>
+				</td>
+				<td onclick="show()" id="rh" class="element" align=center bgcolor=Lightgreen>
+					<p>Rh</p>
+				</td>
+				<td onclick="show()" id="pd" class="element" align=center bgcolor=Lightgreen>
+					<p>Pd</p>
+				</td>
+				<td onclick="show()" id="ag" class="element" align=center bgcolor=Lightgreen>
+					<p>Ag</p>
+				</td>
+				<td onclick="show()" id="cd" class="element" align=center bgcolor=Lightgreen>
+					<p>Cd</p>
+				</td>
+				<td onclick="show()" id="in" class="element" align=center bgcolor=Orange>
+					<p>In</p>
+				</td>
+				<td onclick="show()" id="sn" class="element" align=center bgcolor=Orange>
+					<p>Sn</p>
+				</td>
+				<td onclick="show()" id="sb" class="element" align=center bgcolor=Orange>
+					<p>Sb</p>
+				</td>
+				<td onclick="show()" id="te" class="element" align=center bgcolor=Orange>
+					<p>Te</p>
+				</td>
+				<td onclick="show()" id="i" class="element" align=center bgcolor=Orange>
+					<p>I</p>
+				</td>
+				<td onclick="show()" id="xe" class="element" align=center bgcolor=Orange>
+					<p>Xe</p>
+				</td>
+			</tr>
+			<tr>
+				<td onclick="show()" id="cs" class="element" align=center bgcolor=Yellow>
+					<p>Cs</p>
+				</td>
+				<td onclick="show()" id="ba" class="element" align=center bgcolor=Yellow>
+					<p>Ba</p>
+				</td>
+				<td onclick="show()" id="la" class="element" align=center bgcolor=Lightblue>
+					<p>La</p>
+				</td>
+				</div>
+				<td onclick="show()" id="hf" class="element" align=center bgcolor=Lightgreen>
+					<p>Hf</p>
+				</td>
+				<td onclick="show()" id="ta" class="element" align=center bgcolor=Lightgreen>
+					<p>Ta</p>
+				</td>
+				<td onclick="show()" id="w" class="element" align=center bgcolor=Lightgreen>
+					<p>W</p>
+				</td>
+				<td onclick="show()" id="re" class="element" align=center bgcolor=Lightgreen>
+					<p>Re</p>
+				</td>
+				<td onclick="show()" id="os" class="element" align=center bgcolor=Lightgreen>
+					<p>Os</p>
+				</td>
+				<td onclick="show()" id="ir" class="element" align=center bgcolor=Lightgreen>
+					<p>Ir</p>
+				</td>
+				<td onclick="show()" id="pt" class="element" align=center bgcolor=Lightgreen>
+					<p>Pt</p>
+				</td>
+				<td onclick="show()" id="au" class="element" align=center bgcolor=Lightgreen>
+					<p>Au</p>
+				</td>
+				<td onclick="show()" id="hg" class="element" align=center bgcolor=Lightgreen>
+					<p>Hg</p>
+				</td>
+				<td onclick="show()" id="tl" class="element" align=center bgcolor=Orange>
+					<p>Tl</p>
+				</td>
+				<td onclick="show()" id="pb" class="element" align=center bgcolor=Orange>
+					<p>Pb</p>
+				</td>
+				<td onclick="show()" id="bi" class="element" align=center bgcolor=Orange>
+					<p>Bi</p>
+				</td>
+				<td onclick="show()" id="po" class="element" align=center bgcolor=Orange>
+					<p>Po</p>
+				</td>
+				<td onclick="show()" id="at" class="element" align=center bgcolor=Orange>
+					<p>At</p>
+				</td>
+				<td onclick="show()" id="rn" class="element" align=center bgcolor=Orange>
+					<p>Rn</p>
+				</td>
+			</tr>
+			<tr>
+				<td onclick="show()" id="fr" id="" class="element" align=center bgcolor=Yellow>
+					<p>Fr</p>
+				</td>
+				<td onclick="show()" id="ra" id="" class="element" align=center bgcolor=Yellow>
+					<p>Ra</p>
+				</td>
+				<td onclick="show()" id="ac" id="" class="element" align=center bgcolor=Lightblue>
+					<p>Ac</p>
+				</td>
+				</div>
+				<td onclick="show()" id="rf" class="element" align=center bgcolor=Lightgreen>
+					<p>Rf</p>
+				</td>
+				<td onclick="show()" id="db" class="element" align=center bgcolor=Lightgreen>
+					<p>Db</p>
+				</td>
+				<td onclick="show()" id="sg" class="element" align=center bgcolor=Lightgreen>
+					<p>Sg</p>
+				</td>
+				<td onclick="show()" id="bh" class="element" align=center bgcolor=Lightgreen>
+					<p>Bh</p>
+				</td>
+				<td onclick="show()" id="hs" class="element" align=center bgcolor=Lightgreen>
+					<p>Hs</p>
+				</td>
+				<td onclick="show()" id="mt" class="element" align=center bgcolor=Lightgreen>
+					<p>Mt</p>
+				</td>
+				<td onclick="show()" id="ds" class="element" align=center bgcolor=Lightgreen>
+					<p>Ds</p>
+				</td>
+				<td onclick="show()" id="rg" class="element" align=center bgcolor=Lightgreen>
+					<p>Rg</p>
+				</td>
+				<td onclick="show()" id="cn" class="element" align=center bgcolor=Lightgreen>
+					<p>Cn</p>
+				</td>
+				<td onclick="show()" id="nh" class="element" align=center bgcolor=Orange>
+					<p>Nh</p>
+				</td>
+				<td onclick="show()" id="fl" class="element" align=center bgcolor=Orange>
+					<p>Fl</p>
+				</td>
+				<td onclick="show()" id="mc" class="element" align=center bgcolor=Orange>
+					<p>Mc</p>
+				</td>
+				<td onclick="show()" id="lv" class="element" align=center bgcolor=Orange>
+					<p>Lv</p>
+				</td>
+				<td onclick="show()" id="ts" class="element" align=center bgcolor=Orange>
+					<p>Ts</p>
+				</td>
+				<td onclick="show()" id="og" class="element" align=center bgcolor=Orange>
+					<p>Og</p>
+				</td>
+				<td colspan="6"></td>
+			</tr>
+
+			<tr style="height:1vw">
+			</tr>
+
+
+			<td colspan="2"></td>
+			<td onclick="show()" id="ce" class="element" align=center bgcolor=Lightblue>
+				<p>Ce</p>
+			</td>
+			<td onclick="show()" id="pr" class="element" align=center bgcolor=Lightblue>
+				<p>Pr</p>
+			</td>
+			<td onclick="show()" id="nd" class="element" align=center bgcolor=Lightblue>
+				<p>Nd</p>
+			</td>
+			<td onclick="show()" id="pm" class="element" align=center bgcolor=Lightblue>
+				<p>Pm</p>
+			</td>
+			<td onclick="show()" id="sm" class="element" align=center bgcolor=Lightblue>
+				<p>Sm</p>
+			</td>
+			<td onclick="show()" id="eu" class="element" align=center bgcolor=Lightblue>
+				<p>Eu</p>
+			</td>
+			<td onclick="show()" id="gd" class="element" align=center bgcolor=Lightblue>
+				<p>Gd</p>
+			</td>
+			<td onclick="show()" id="tb" class="element" align=center bgcolor=Lightblue>
+				<p>Tb</p>
+			</td>
+			<td onclick="show()" id="dy" class="element" align=center bgcolor=Lightblue>
+				<p>Dy</p>
+			</td>
+			<td onclick="show()" id="ho" class="element" align=center bgcolor=Lightblue>
+				<p>Ho</p>
+			</td>
+			<td onclick="show()" id="er" class="element" align=center bgcolor=Lightblue>
+				<p>Er</p>
+			</td>
+			<td onclick="show()" id="tm" class="element" align=center bgcolor=Lightblue>
+				<p>Tm</p>
+			</td>
+			<td onclick="show()" id="yb" class="element" align=center bgcolor=Lightblue>
+				<p>Yb</p>
+			</td>
+			<td onclick="show()" id="lu" class="element" align=center bgcolor=Lightblue>
+				<p>Lu</p>
+			</td>
+			<td colspan="4"></td>
+			</tr>
+			<tr>
+				<td colspan="2"></td>
+				<td onclick="show()" id="th" class="element" align=center bgcolor=Lightblue>
+					<p>Th</p>
+				</td>
+				<td onclick="show()" id="pa" class="element" align=center bgcolor=Lightblue>
+					<p>Pa</p>
+				</td>
+				<td onclick="show()" id="u" class="element" align=center bgcolor=Lightblue>
+					<p>U</p>
+				</td>
+				<td onclick="show()" id="np" class="element" align=center bgcolor=Lightblue>
+					<p>Np</p>
+				</td>
+				<td onclick="show()" id="pu" class="element" align=center bgcolor=Lightblue>
+					<p>Pu</p>
+				</td>
+				<td onclick="show()" id="am" class="element" align=center bgcolor=Lightblue>
+					<p>Am</p>
+				</td>
+				<td onclick="show()" id="cm" class="element" align=center bgcolor=Lightblue>
+					<p>Cm</p>
+				</td>
+				<td onclick="show()" id="bk" class="element" align=center bgcolor=Lightblue>
+					<p>Bk</p>
+				</td>
+				<td onclick="show()" id="cf" class="element" align=center bgcolor=Lightblue>
+					<p>Cf</p>
+				</td>
+				<td onclick="show()" id="es" class="element" align=center bgcolor=Lightblue>
+					<p>Es</p>
+				</td>
+				<td onclick="show()" id="fm" class="element" align=center bgcolor=Lightblue>
+					<p>Fm</p>
+				</td>
+				<td onclick="show()" id="md" class="element" align=center bgcolor=Lightblue>
+					<p>Md</p>
+				</td>
+				<td onclick="show()" id="no" class="element" align=center bgcolor=Lightblue>
+					<p>No</p>
+				</td>
+				<td onclick="show()" id="lr" class="element" align=center bgcolor=Lightblue>
+					<p>Lr</p>
+				</td>
+				<hr width="500">
+				<td colspan="4"></td>
+			</tr>
+		</table>
+		<div id="moreinfo">
+
+			Additional information will appear here after clicking the buttons at the top.<br>
+
+		</div>
+		<br>
+		<!--
+		<audio controls autoplay loop id = "music" >
+  			<source src="music/kahoot.mp3" type="audio/mpeg">
+ 			 Your browser does not support the audio tag.
+		</audio>
+		-->
+			<br>
+			<hr>
+			<footer onclick = "rickroll()"> Interactive Periodic Table by Hanson Sun,<br>
+				A Chemistry 11 project.
+			</footer>
+			<script src="script.js"></script>
+</body>
+
+</html>
